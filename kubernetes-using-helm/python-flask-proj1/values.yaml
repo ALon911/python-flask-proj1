@@ -35,7 +35,7 @@ autoscaling:
 secretKey: your-secret-key-here
 
 database:
-  host: localhost
+  host: my-postgresql.default.svc.cluster.local
   user: root
-  password: ""
+  password: yourpassword
   name: flask_mvc_db
