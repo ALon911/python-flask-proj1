@@ -31,3 +31,11 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 10
   targetCPUUtilizationPercentage: 80
+
+secretKey: your-secret-key-here
+
+database:
+  host: localhost
+  user: root
+  password: ""
+  name: flask_mvc_db

@@ -4,3 +4,4 @@ python-dotenv==1.0.1
 mysqlclient==2.2.4 
 gunicorn
 flask_sqlalchemy
+psycopg2-binary
