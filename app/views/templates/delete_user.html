@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Delete User{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card border-danger">
+            <div class="card-header bg-danger text-white">
+                <h2 class="mb-0">Confirm Delete</h2>
+            </div>
+            <div class="card-body">
+                <p>Are you sure you want to delete the following user?</p>
+                <ul>
+                    <li><strong>Username:</strong> {{ user.username }}</li>
+                    <li><strong>Email:</strong> {{ user.email }}</li>
+                </ul>
+                <form method="POST">
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-danger">Delete User</button>
+                        <a href="{{ url_for('main.index') }}" class="btn btn-secondary">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
